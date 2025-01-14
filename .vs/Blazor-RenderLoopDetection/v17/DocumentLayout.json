@@ -1,15 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\reinoutwijnholds\\source\\repos\\Blazor-RenderLoopDetection\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E23A86-EDBE-4984-995A-7450AD4C9A29}|Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection.csproj|c:\\users\\reinoutwijnholds\\source\\repos\\blazor-renderloopdetection\\blazor-renderloopdetection\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9E23A86-EDBE-4984-995A-7450AD4C9A29}|Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection.csproj|solutionrelative:blazor-renderloopdetection\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E23A86-EDBE-4984-995A-7450AD4C9A29}|Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection.csproj|c:\\users\\reinoutwijnholds\\source\\repos\\blazor-renderloopdetection\\blazor-renderloopdetection\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9E23A86-EDBE-4984-995A-7450AD4C9A29}|Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection.csproj|solutionrelative:blazor-renderloopdetection\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E23A86-EDBE-4984-995A-7450AD4C9A29}|Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection.csproj|c:\\users\\reinoutwijnholds\\source\\repos\\blazor-renderloopdetection\\blazor-renderloopdetection\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9E23A86-EDBE-4984-995A-7450AD4C9A29}|Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection.csproj|solutionrelative:blazor-renderloopdetection\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9E23A86-EDBE-4984-995A-7450AD4C9A29}|Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection.csproj|c:\\users\\reinoutwijnholds\\source\\repos\\blazor-renderloopdetection\\blazor-renderloopdetection\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9E23A86-EDBE-4984-995A-7450AD4C9A29}|Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection.csproj|solutionrelative:blazor-renderloopdetection\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 3620,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 4815,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,11 +91,63 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\reinoutwijnholds\\source\\repos\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "Blazor-RenderLoopDetection\\Components\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\reinoutwijnholds\\source\\repos\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "Blazor-RenderLoopDetection\\Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T20:35:01.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Error.razor",
+              "DocumentMoniker": "C:\\Users\\reinoutwijnholds\\source\\repos\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "Blazor-RenderLoopDetection\\Components\\Pages\\Error.razor",
+              "ToolTip": "C:\\Users\\reinoutwijnholds\\source\\repos\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "Blazor-RenderLoopDetection\\Components\\Pages\\Error.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T20:34:58.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\reinoutwijnholds\\source\\repos\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Blazor-RenderLoopDetection\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\reinoutwijnholds\\source\\repos\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Blazor-RenderLoopDetection\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T20:32:58.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\reinoutwijnholds\\source\\repos\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Blazor-RenderLoopDetection\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\reinoutwijnholds\\source\\repos\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Blazor-RenderLoopDetection\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T20:32:43.337Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 2151,
+          "DockedWidth": 956,
           "SelectedChildIndex": -1,
           "Children": [
             {

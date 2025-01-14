@@ -12,6 +12,35 @@
 @code {
     private int currentCount = 0;
 
+    private static int renderCount = 0;
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        renderCount++;
+        
+        if(TriggerFaultyPath())
+            MethodThatSeemsInnocent();
+    }
+
+    private bool TriggerFaultyPath()
+    {
+        // This is the trigger for the render loop
+        return renderCount == 1;
+    }
+
+    private void MethodThatSeemsInnocent() 
+    {
+        // Somewhere multiple levels deep, this method will be called in specific
+        // and of course complex scenarios, causing a render loop
+        GetDataFromDatabase();
+    }
+
+    private void GetDataFromDatabase()
+    {
+        // The source for render loops
+        StateHasChanged();
+    }
+
     private void IncrementCount()
     {
         currentCount++;
