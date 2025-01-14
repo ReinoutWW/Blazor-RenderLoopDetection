@@ -1,9 +1,19 @@
 ﻿@page "/counter"
+
+@using Blazor_RenderLoopDetection.Components.Layout;
+
+@inherits PageBase
 @rendermode InteractiveServer
 
 <PageTitle>Counter</PageTitle>
 
-<h1>Counter</h1>
+<h1>Counter - With render loop on count "1"</h1>
+
+<p>
+   This component demonstrates a render loop detection when the count is 1.
+    <br />
+    <strong>Click the button to trigger the render loop</strong>
+</p>
 
 <p role="status">Current count: @currentCount</p>
 
@@ -12,12 +22,12 @@
 @code {
     private int currentCount = 0;
 
-    private static int renderCount = 0;
-
     protected override void OnAfterRender(bool firstRender)
     {
-        renderCount++;
-        
+        base.OnAfterRender(firstRender);
+
+        // Once currentCount is 1, the render loop will be triggered
+        // to demonstrate the render loop detection
         if(TriggerFaultyPath())
             MethodThatSeemsInnocent();
     }
@@ -25,7 +35,7 @@
     private bool TriggerFaultyPath()
     {
         // This is the trigger for the render loop
-        return renderCount == 1;
+        return currentCount == 1;
     }
 
     private void MethodThatSeemsInnocent() 

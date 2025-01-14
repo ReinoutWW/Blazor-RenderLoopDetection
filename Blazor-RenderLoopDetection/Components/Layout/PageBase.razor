@@ -1,0 +1,63 @@
+﻿@namespace Blazor_RenderLoopDetection.Components.Layout
+@using System.Timers
+@using System.Diagnostics
+
+@* Base for every page *@
+
+@code {
+    private int renderCount = 0;
+    private int renderThresholdPerSecond = 100;
+
+    private Timer _resetRenderCountTimer = new Timer();
+    private bool IsRenderThresholdReached() => renderCount > renderThresholdPerSecond;
+    private bool IsDebugMode() => true;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        InitializeResetRenderCounterTimer();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        renderCount++;
+
+        if(IsRenderThresholdReached())
+            OnRenderLoopDetected();
+    }
+
+    /// <summary>
+    /// WARNING: If you break here, that means you have a render loop
+    /// Make sure to check the call stack and fix the issue!
+    /// This scenario could cause a production crash if not handled properly
+    /// </summary>
+    private void OnRenderLoopDetected()
+    {
+        Console.WriteLine("Render loop detected!");
+
+        if (IsDebugMode())
+            Debugger.Break(); // Development: Render loop detected!
+        else
+            LogRenderLoop();
+    }
+
+    /// <summary>
+    /// Usually, you would log the render loop somewhere that it can be monitored
+    /// e.g. Application Insights, Log Analytics, etc.
+    /// </summary>
+    private void LogRenderLoop()
+    {
+        // Log the render loop somewhere that it can be monitored
+    }
+
+    public void InitializeResetRenderCounterTimer()
+    {
+        _resetRenderCountTimer.Elapsed += new ElapsedEventHandler(OnResetRenderTimerTimed);
+        _resetRenderCountTimer.Interval = 1000;
+        _resetRenderCountTimer.Enabled = true;
+    }
+
+    public void OnResetRenderTimerTimed(object source, ElapsedEventArgs e) => ResetRenderCount();
+
+    private void ResetRenderCount() => renderCount = 0;
+}
