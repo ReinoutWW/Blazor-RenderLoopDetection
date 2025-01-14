@@ -1,4 +1,7 @@
 ﻿@namespace Blazor_RenderLoopDetection.Components.Layout
+
+@implements IDisposable
+
 @using System.Timers
 @using System.Diagnostics
 
@@ -60,4 +63,9 @@
     public void OnResetRenderTimerTimed(object source, ElapsedEventArgs e) => ResetRenderCount();
 
     private void ResetRenderCount() => renderCount = 0;
+
+    public void Dispose()
+    {
+        _resetRenderCountTimer.Dispose();
+    }
 }

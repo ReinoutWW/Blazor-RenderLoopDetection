@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Blazor-RenderLoopDetection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78f6e0cfc5721a6234af3eb183b3c7f7952374f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a36570c827c568b0828c3b9e437fac5ad5aaf0d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Blazor-RenderLoopDetection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Blazor-RenderLoopDetection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
