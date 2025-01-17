@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2LtDZByCZ3U=",
+  "dgSpecHash": "b3PT44SZOnc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\reinoutwijnholds\\source\\repos\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Reinout Wijnholds\\Documents\\GitHub\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection\\Blazor-RenderLoopDetection.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Reinout Wijnholds\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.101\\microsoft.net.sdk.compilers.toolset.9.0.101.nupkg.sha512"
+  ],
   "logs": []
 }

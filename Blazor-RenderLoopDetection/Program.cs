@@ -1,10 +1,22 @@
 using Blazor_RenderLoopDetection.Components;
+using Blazor_RenderLoopDetection.Detectors;
+using Blazor_RenderLoopDetection.Detectors.CircuitHandler;
+using Microsoft.AspNetCore.Components.Server.Circuits;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddSingleton<CircuitHandler, CustomCircuitHandler>();
+
+builder.Services.AddScoped<IUserExterminator, UserExterminator>();
+builder.Services.AddScoped(sp =>
+{
+    var userExterminator = sp.GetRequiredService<IUserExterminator>();
+    return new RenderLoopDetector(100, new TimeSpan(0, 0, 1), userExterminator);
+});
 
 var app = builder.Build();
 
